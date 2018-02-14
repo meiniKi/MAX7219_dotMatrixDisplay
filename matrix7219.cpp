@@ -1,4 +1,16 @@
-
+/************** LIBRARY TO CONTROL MAX7219 DOT MATRIX DISPLAYS ****************/
+/*
+/* configurations:
+    uint8_t din = 11;           //DIN pin, any or MOSI for SPI mode
+    uint8_t cs = 7;             //CS pin, any or NOT(!!) SS for SPI mode
+    uint8_t clk = 13;           //CLK pin, any or CLK for SPI mode
+    uint8_t nr_of_displays = 8; //number of MAX7219 chips in series
+ 
+    #define MATRIX_SPI_MODE     //for using SPI
+ 
+/* Author: (c) Meinhard Kissich, www.meinhard-kissich.at
+/* Version: 0.9
+*/
 
 
 #include "Arduino.h"
